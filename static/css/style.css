@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary: #0077b6;
+    --secondary: #023e8a;
+    --light: #f1f5f9;
+    --dark: #333;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.header {
+    background: var(--secondary); /* dark blue */
+    padding: 20px 0;
+}
+
+.header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.navbar a {
+    color: white;
+    margin-left: 25px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--primary);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
+.home .content {
+    max-width: 500px;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+}
+
+.home p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.home .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.image img {
+    width: 600px;
+    max-width: 100%;
+}
+
+.features, .how-it-works, .about, .contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.features-grid, .steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.feature-item, .step {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: var(--shadow);
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.checker {
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.checker-container {
+    background: white;
+    color: var(--dark);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.checker-container h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.checker-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 260px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--secondary);
+}
+
+#interaction-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.disclaimer {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.about {
+    padding: 100px 20px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.about h2 {
+    font-size: 2.8rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: var(--primary);
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--dark);
+}
+
+.contact {
+    background: var(--primary);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-wrapper i {
+    font-size: 3rem;
+    color: white;
+}
+
+.contact-text h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    font-size: 1.1rem;
+}
+
+.contact-text a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+.footer {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}

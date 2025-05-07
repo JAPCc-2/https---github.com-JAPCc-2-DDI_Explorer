@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDI Explorer | Drug Interaction Checker</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <i class="fas fa-capsules"></i> DDI Explorer
+        </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#checker">Checker</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Home Section -->
+<section class="home" id="home">
+    <div class="content">
+        <h1>Explore Safer Drug Combinations</h1>
+        <p>Discover, predict, and manage potential drug interactions using powerful data analysis and machine learning insights.</p>
+        <a href="#checker" class="btn">Start Checking</a>
+    </div>
+    <div class="image">
+        <img src=/static/image/image.png
+ alt="Image">
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+        <div class="feature-item">
+            <i class="fas fa-bolt"></i>
+            <h3>Rapid Analysis</h3>
+            <p>Instantly assess potential drug-drug interactions with speed and accuracy.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-database"></i>
+            <h3>Data-Driven</h3>
+            <p>Built on pharmaceutical databases, machine learning, and medical literature.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Reliable</h3>
+            <p>Designed for researchers, pharmacists, and healthcare innovators.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>1. Enter Drugs</h3>
+            <p>Type the names of two drugs you want to check.</p>
+        </div>
+        <div class="step">
+            <h3>2. Analyze</h3>
+            <p>We check our database and predictive models instantly.</p>
+        </div>
+        <div class="step">
+            <h3>3. Get Results</h3>
+            <p>See possible interaction risks, recommendations, and insights.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Interaction Checker Section -->
+<section class="checker" id="checker">
+    <div class="checker-container">
+        <h2>🔍 Check Drug Interactions</h2>
+        <p class="checker-subtext">Quickly detect potential drug interactions and prevent adverse effects. Start exploring now!</p>
+
+        <div class="form">
+            <input type="text" id="drug1" placeholder="Enter Drug 1 (e.g., Warfarin)">
+            <input type="text" id="drug2" placeholder="Enter Drug 2 (e.g., Ibuprofen)">
+            <button onclick="checkInteraction()">Analyze Interaction</button>
+        </div>
+
+        <div id="spinner" style="display:none;">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+
+        <p id="interaction-result"></p>
+        
+        <p class="disclaimer">Disclaimer: This tool provides informational results. Always verify with medical sources before clinical use.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <h2>About <span>DDI Explorer</span></h2>
+    <p>
+        DDI Explorer combines machine learning and curated pharmaceutical data to predict potential drug-drug interactions.
+        Our platform supports clinicians, researchers, and developers in building safer therapies and smarter healthcare solutions.
+    </p>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="contact-wrapper">
+        <i class="fas fa-envelope"></i>
+        <div class="contact-text">
+            <h3>Contact Us</h3>
+            <p>Email us at <a href="mailto:info@ddiexplorer.com">info@ddiexplorer.com</a> for collaborations or feedback.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>© 2025 DDI Explorer | Built for Safer Medicines with Data Science</p>
+</footer>
+
+<!-- External JS -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
